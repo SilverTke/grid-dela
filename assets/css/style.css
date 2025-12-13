@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900:1,100..900&display=swap");
+
+* {
+	font-family: sans-serif, Roboto;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#mainGrid {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 60px 1fr 60px;
+	height: 100dvh;
+}
+
+#mainGrid > nav {
+	background-color: slateblue;
+	color: white;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#mainContainer {
+	display: grid;
+	grid-template-columns: 15% 1fr;
+	grid-template-rows: 100%;
+}
+
+#mainContainer aside {
+	width: 100%;
+	height: 100%;
+	background-color: #edeaf2;
+	overflow: hidden;
+}
+
+footer {
+	background-color: #f0eff4;
+	width: 100%;
+	height: 100%;
+}
+
+.product-card {
+	display: flex;
+	flex-direction: column;
+}
