@@ -3,17 +3,40 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de libros</title>
+    <title>Tienda de productos</title>
     <link rel="stylesheet" href='{{ "/assets/css/style.css" |> url }}'>
   </head>
   <body>
     <div id="mainGrid">
       <nav>
-        <p>Libros</p>
+        <p>Tienda de productos</p>
       </nav>
       <div id="mainContainer">
-        <aside></aside>
-        <main></main>
+        <aside>
+          {{ for category of categories }}
+          <div class="category">
+            <p class="category-name">{{ category.category }}</p>
+            <p class="category-count">{{ category.count }}</p>
+          </div>
+          {{ /for }}
+        </aside>
+        <main>
+          <div id="productContainer">
+            {{ for product of products }}
+              <div class="product-card">
+                <img src="{{product.image}}" alt="Un producto">
+                <p class="product-name">
+                  {{ product.title }}
+                </p>
+                <p class="product-price">
+                  {{
+                    (product.price * 1000).toLocaleString('es-CL',{style: "currency", currency: "CLP"})
+                  }}
+                </p>
+              </div>
+            {{ /for }}
+          </div>
+        </main>
       </div>
       <footer></footer>
     </div>
