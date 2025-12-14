@@ -1,82 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900:1,100..900&display=swap");
 
 * {
-  font-family: sans-serif, Roboto;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	font-family: sans-serif, Roboto;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 #mainGrid {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 60px 1fr 60px;
-  height: 100dvh;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 60px 1fr 60px;
+	height: 100dvh;
 }
 
-#mainGrid>nav {
-  background-color: slateblue;
-  color: white;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#mainGrid > nav {
+	background-color: slateblue;
+	color: white;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #mainContainer {
-  display: grid;
-  grid-template-columns: 15% 1fr;
-  grid-template-rows: 100%;
+	display: grid;
+	grid-template-columns: 15% 1fr;
+	grid-template-rows: 100%;
 }
 
 #mainContainer aside {
-  padding: 16px;
-  width: 100%;
-  height: 100%;
-  background-color: #edeaf2;
-  overflow: hidden;
+	padding: 16px;
+	width: 100%;
+	height: 100%;
+	background-color: #edeaf2;
+	overflow: hidden;
 }
 
 footer {
-  background-color: #f0eff4;
-  width: 100%;
-  height: 100%;
+	background-color: #f0eff4;
+	width: 100%;
+	height: 100%;
 }
 
 #productContainer {
-  padding: 32px;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(3, auto);
+	padding: 32px;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(3, auto);
 }
 
 .category {
-  display: flex;
-  gap: 4px;
+	display: flex;
+	gap: 4px;
 }
 
 .category .category-count {
-  background-color: slateblue;
-  color: white;
-  padding-left: 4px;
-  padding-right: 4px;
-  border-radius: 2px;
+	background-color: slateblue;
+	color: white;
+	padding-left: 4px;
+	padding-right: 4px;
+	border-radius: 2px;
 }
 
 .product-card img {
-  width: 150px;
+	width: 150px;
 }
 
 .product-card p.product-name {
-  font-weight: 700;
+	font-weight: 300;
 }
 
-.product-card p.product-store {
-  font-weight: 500;
+.product-card p.product-price {
+	font-weight: 700;
 }
 
 .product-card {
-  display: flex;
-  flex-direction: column;
-  width: 15%;
+	display: flex;
+	flex-direction: column;
+	width: 15%;
 }
